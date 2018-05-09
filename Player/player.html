@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>h5播放器</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+	<link rel="stylesheet" type="text/css" href="player_css/player.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/player-js.js"></script>
+	
+	<link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<audio preload="auto"></audio>
+		<div id="wrapper" class="wrapper">
+			<!--专辑封面-->
+			<div class="EP-wrapper">
+				<!--歌词区-->
+				<div id="lrc" class="lrc">
+					<div id="lyric" class="lyric"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--进度条-->
+		<span class="basebar">
+			<span class="progressbar"></span>
+		</span>
+
+		<div id="social" class="social-buttons music-massage">
+				<h3 class="musicname" title="">说 谎</h3>
+				<p class="musicer" title="">林宥嘉</p>
+			</div>
+	
+		<div id="buttons" class="buttons">
+			<div class="social">
+				<!--喜欢-->
+				<span class="favourite"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></span>
+				<!--分享-->
+				<span class="share"><img src="images/share.png"></span>
+			</div>
+			<!--播放按钮-->
+			<div class="player">
+				<span class="pre switch btn1"><img src="images/pre.png"></span>
+				<span class="btn2 Audio_pause"></span>
+				<span class="next switch btn3"><img src="images/next.png"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
